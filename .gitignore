@@ -1,6 +1,12 @@
 # Created by https://www.toptal.com/developers/gitignore/api/c++,qt,visualstudiocode,cmake
 # Edit at https://www.toptal.com/developers/gitignore?templates=c++,qt,visualstudiocode,cmake
 
+
+build/
+CMakeFiles/
+*.db
+*.exe
+
 ### C++ ###
 # Prerequisites
 *.d
