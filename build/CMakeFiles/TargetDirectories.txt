@@ -1,0 +1,3 @@
+C:/Qt/Project/My_ERP/build/CMakeFiles/QtSQLiteTest.dir
+C:/Qt/Project/My_ERP/build/CMakeFiles/ALL_BUILD.dir
+C:/Qt/Project/My_ERP/build/CMakeFiles/ZERO_CHECK.dir
