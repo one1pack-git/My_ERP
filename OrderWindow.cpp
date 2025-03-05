@@ -51,7 +51,7 @@ void OrderWindow::addOrder() {
     }
 
     int quantity = quantityStr.toInt();
-    DatabaseManager::getInstance().insertOrder(productName, quantity);
+    DatabaseManager::getInstance().getOrderManager()->insertOrder(productName, quantity);
 
     // 테이블에 새로운 행 추가
     int row = table->rowCount();
@@ -65,7 +65,7 @@ void OrderWindow::addOrder() {
 }
 
 void OrderWindow::loadOrders() {
-    QVector<Order> orders = DatabaseManager::getInstance().fetchOrders();
+    QVector<Order> orders = DatabaseManager::getInstance().getOrderManager()->fetchOrders();
 
     for (const Order &order : orders) {
         int row = table->rowCount();

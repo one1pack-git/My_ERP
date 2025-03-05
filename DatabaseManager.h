@@ -2,14 +2,8 @@
 #define DATABASEMANAGER_H
 
 #include <QSqlDatabase>
-#include <QString>
-#include <QVector>
-
-struct Order {
-    int id;
-    QString productName;
-    int quantity;
-};
+#include "OrderDatabaseManager.h"
+#include "ClientDatabaseManager.h"
 
 class DatabaseManager {
 public:
@@ -17,14 +11,17 @@ public:
     bool openDatabase(const QString& dbName);
     void closeDatabase();
 
-    bool insertOrder(const QString& productName, int quantity);
-    QVector<Order> fetchOrders();  // 저장된 발주 목록 불러오기
+    OrderDatabaseManager* getOrderManager();
+    ClientDatabaseManager* getClientManager();
 
 private:
     DatabaseManager();
     ~DatabaseManager();
-    bool createTables();
+    bool createTables();  // 하위 모듈의 테이블 생성 호출
+
     QSqlDatabase db;
+    OrderDatabaseManager* orderManager;
+    ClientDatabaseManager* clientManager;
 };
 
 #endif // DATABASEMANAGER_H

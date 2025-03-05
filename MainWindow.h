@@ -4,6 +4,8 @@
 #include <QMainWindow>
 #include "OrderWindow.h"
 
+class ClientWindow;
+
 class MainWindow : public QMainWindow {
     Q_OBJECT
 
@@ -13,6 +15,7 @@ public:
 
 private:
     OrderWindow *orderWindow;
+    ClientWindow *clientWindow;
 };
 
 #endif // MAINWINDOW_H

@@ -15,7 +15,11 @@ add_executable(My_ERP
     main.cpp 
     MainWindow.cpp
     OrderWindow.cpp
+    ClientWindow.cpp
+    ClientRegisterDialog.cpp
     DatabaseManager.cpp
+    ClientDatabaseManager.cpp
+    OrderDatabaseManager.cpp
 )
 
 # Qt 라이브러리 연결
