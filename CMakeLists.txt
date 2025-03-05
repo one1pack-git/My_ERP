@@ -3,6 +3,8 @@ project(My_ERP)
 
 set(CMAKE_CXX_STANDARD 17)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
+# set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} /FS")
+# add_compile_options(/FS)
 
 # Qt 라이브러리 설정
 find_package(Qt6 REQUIRED COMPONENTS Core Widgets Sql)
@@ -12,14 +14,14 @@ set(CMAKE_AUTOMOC ON)
 
 # 소스 파일 추가
 add_executable(My_ERP 
-    main.cpp 
-    MainWindow.cpp
-    OrderWindow.cpp
-    ClientWindow.cpp
-    ClientRegisterDialog.cpp
-    DatabaseManager.cpp
-    ClientDatabaseManager.cpp
-    OrderDatabaseManager.cpp
+    ./src/main.cpp 
+    ./src/Database/DatabaseManager.cpp
+    ./src/Database/ClientDatabaseManager.cpp
+    ./src/Database/OrderDatabaseManager.cpp
+    ./src/Views/MainWindow.cpp
+    ./src/Views/OrderWindow.cpp
+    ./src/Views/ClientWindow.cpp
+    ./src/Views/ClientRegisterDialog.cpp
 )
 
 # Qt 라이브러리 연결

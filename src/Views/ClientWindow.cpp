@@ -1,6 +1,6 @@
-#include "ClientWindow.h"
-#include "ClientRegisterDialog.h"
-#include "DatabaseManager.h"
+#include "./ClientWindow.h"
+#include "./ClientRegisterDialog.h"
+#include "../Database/DatabaseManager.h"
 
 #include <QTableWidgetItem>
 #include <QLabel>

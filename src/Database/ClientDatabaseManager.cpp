@@ -1,4 +1,5 @@
-#include "ClientDatabaseManager.h"
+#include "./ClientDatabaseManager.h"
+
 #include <QSqlQuery>
 #include <QSqlError>
 #include <QDebug>

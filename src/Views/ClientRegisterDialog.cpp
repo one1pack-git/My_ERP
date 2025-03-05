@@ -1,4 +1,5 @@
-#include "ClientRegisterDialog.h"
+#include "./ClientRegisterDialog.h"
+
 #include <QFormLayout>
 #include <QHBoxLayout>
 #include <QPushButton>
