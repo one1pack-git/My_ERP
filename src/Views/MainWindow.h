@@ -2,9 +2,13 @@
 #define MAINWINDOW_H
 
 #include <QMainWindow>
-#include "OrderWindow.h"
+#include "./OrderWindow.h"
+#include "./ClientWindow.h"
+#include "./FabricInventoryWindow.h"
+#include "./WoodInventoryWindow.h"
+#include "./AngleInventoryWindow.h"
 
-class ClientWindow;
+// class ClientWindow;
 
 class MainWindow : public QMainWindow {
     Q_OBJECT
@@ -16,6 +20,9 @@ public:
 private:
     OrderWindow *orderWindow;
     ClientWindow *clientWindow;
+    FabricInventoryWindow *fabricInventoryWindow;
+    WoodInventoryWindow *woodInventoryWindow;
+    AngleInventoryWindow *angleInventoryWindow;
 };
 
 #endif // MAINWINDOW_H
